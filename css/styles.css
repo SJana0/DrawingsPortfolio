@@ -1,0 +1,186 @@
+body {
+  display : none;
+  margin : 0;
+  font-family : Dongle;
+  color : #ffffff;
+  background-color : #181818;
+  }
+  
+  .background-container {
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : auto;
+  z-index : -1;
+  pointer-events : none;
+  }
+
+  .background-img {
+  position : absolute;
+  width : 100%;
+  height : auto;
+  opacity : 1;
+  }
+
+
+  header {
+  text-align : center;
+  padding : 50px 0;
+  }
+
+  header h1 {
+  display : none;
+  font-size : 7em;
+  font-weight : normal;
+  margin : 0;
+  font-family : "Moscow Metro";
+  }
+
+  header p {
+  display : none;
+  font-size : 3em;
+  margin : 10px 0;
+  font-weight : normal;
+  font-family : Dongle;
+  }
+
+  nav {
+  text-align : center;
+  margin : 20px 0;
+  padding : 1px;
+  box-shadow : 0 0 15px rgb(0, 0, 0, 1);
+  background-color : #28282850;
+  }
+
+  nav ul li a {
+  display : inline-block;
+  transition : transform 0.3s;
+  }
+
+  nav ul {
+  list-style : none;
+  padding : 0;
+  }
+
+  nav li {
+  display : inline;
+  margin : 0 20px;
+  }
+
+  nav a {
+  text-decoration : none;
+  color : #ffffff;
+  font-size : 2em;
+  }
+
+  main {
+  padding : 50px;
+  font-size : 2em;
+  }
+
+  .gallery {
+  display : flex;
+  flex-wrap : wrap;
+  gap : 40px;
+  justify-content : center;
+  }
+
+  .gallery-item {
+  max-width : calc(30% - 20px);
+  position : relative;
+  }
+
+  .gallery-item img {
+  width : 100%;
+  height : auto;
+  border-radius : 10px;
+  transition : transform 0.7s ease;
+  }
+
+  footer {
+  text-align : center;
+  padding : 5px 0;
+  background-color : hsl(0 0% 16%);
+  font-size : 2em;
+  }
+
+  footer ul {
+  list-style : none;
+  padding : 0;
+  }
+
+  footer li {
+  display : inline;
+  margin : 0 10px;
+  }
+
+  footer a {
+  text-decoration : none;
+  color : #fff;
+  }
+
+  @media (max-width: 800px) {
+    header {
+      font-size : 70%;
+    }
+
+    .gallery-item {
+      max-width : calc(50% - 20px);
+    }
+
+    nav {
+      text-align : center;
+      margin : 20px 0;
+      font-size : 70%;
+    }
+  }
+    
+    @media (max-width: 600px) {
+    header {
+      font-size : 60%;
+    }
+    nav li {
+      display : block;
+      margin : 10px 0;
+    }
+    .gallery-item {
+      flex : 1 100%;
+      max-width : 100%;
+    }
+    }
+
+    @font-face {
+      font-family : "Moscow Metro";
+      src : url("fonts/MoscowMetroColor.otf");
+    }
+
+    @font-face {
+      font-family : "Pais Alt";
+      src : url("fonts/PaisAlt-Medium.otf");
+    }
+
+    @font-face {
+      font-family : "Dongle";
+      src : url("fonts/Dongle-Light.ttf");
+    }
+
+    .gallery-item:hover {
+    z-index : 1;
+    }
+
+    .gallery-item:hover img {
+    transform : scale(1.2);
+    }
+
+    .image-title {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    background-color : rgb(0, 0, 0, 0.1);
+    color : white;
+    padding : 5px;
+    border-radius : 10px;
+    display : none;
+    }
+    
