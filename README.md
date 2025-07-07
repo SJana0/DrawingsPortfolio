@@ -1,6 +1,6 @@
 # Мое портфолио рисунков
 
-![Иллюстрация к проекту](https://github.com/SJana0/DrawingsPortfolio/blob/main/images/preview.png)
+![Главная страница](https://github.com/SJana0/DrawingsPortfolio/blob/main/images/preview.png)
 
 Веб-сайт-портфолио с моими работами, созданный с использованием HTML, CSS и JavaScript.
 
